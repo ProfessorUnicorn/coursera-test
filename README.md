@@ -26,6 +26,8 @@ Creating this sample repository is part of the first module.
 
 <p>
     Read more about 
-    <a href="https://www.nobledesktop.com/learn/git/create-a-readme-file" >markdown
+    <a 
+        targe="_blank"
+        href="https://www.nobledesktop.com/learn/git/create-a-readme-file" >markdown
     </a>
 </p>
