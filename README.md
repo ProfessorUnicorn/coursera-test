@@ -23,3 +23,9 @@ Creating this sample repository is part of the first module.
 > id sem consectetuer libero luctus adipiscing.
 
 ### H3 Heading <!--- H3 -->
+
+<p>
+    Read more about 
+    <a href="https://www.nobledesktop.com/learn/git/create-a-readme-file" >markdown
+    </a>
+</p>
