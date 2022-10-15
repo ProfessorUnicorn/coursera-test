@@ -1,0 +1,77 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+/*                                                          */
+/*  Module 2 Coding Assignment - Menu Styles                */
+/*  Kristin Lassonde                                        */
+/*  October 2022                                            */
+/*  HTML CSS JS on Corsera                                  */
+/*                                                          */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+/* all headers will be centered */
+h1, h2{
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    background-color: darkslateblue;
+    padding: 10px;
+    color: white; /* white text */
+    font-size: xx-large;
+    text-shadow: 
+    /*  x   y   color*/ /* blue doesn't work here??*/
+        2px 2px black;       
+}
+
+h2 {
+    color: darkslateblue;
+    font-size: x-large;
+    text-shadow: 
+    /*  x   y   color*/ /* blue doesn't work here??*/
+        .1px .1px black;      
+}
+
+/* all <a> elements children of <nav> will look like buttons*/
+nav > a {
+    display: block;
+    border-top: 2px solid slategray;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid slategray;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none; /* removes underline on links */ 
+    background-color: darkslateblue; /* dark slate blue */
+    opacity: 0.85;
+    border-radius: 6px; /* round corners */
+    color: white; /* white text */
+    font-size: x-large;
+    text-shadow: 
+    /*  x   y   color*/ /* blue doesn't work here??*/
+        2px 2px black;   
+    /*          y     x   */
+    padding:    10px  10px;
+    width: 200px;
+    cursor: alias;
+}            
+
+/* <a> elements button links when mouse is hovering */
+    nav > a:hover {
+    opacity: 1;
+    transition: 0.67s;
+}     
+
+/* show right-pointing double arrow when hovering over a button */
+nav > a:hover::after {
+    content: '\00bb'; 
+    transition: 0.67s; /* is this doing anything? */
+    opacity: 1;
+    border-color: black;
+}   
+
+section {
+    border: 2px solid darkslateblue;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 20px 20px;
+}
