@@ -12,62 +12,49 @@
     <!--- Website head, which is like the preamble -->
     <head>
         <meta charset="utf8">
-        <title>Eat at Skippy's</title> <!--- browser tab -->
+        <title>Food, LLC</title> <!--- browser tab -->
 
-        <!-- CSS Specifications i.e. style sheet-->
-        <!-- Default link style -->
-        <!--- An unvisited link is underlined and blue -->
-        <!--- A visited link is underlined and purple -->
-        <!--- An active link is underlined and red -->        
-        <style> 
-            .button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            }
-        </style>
-           
+        <link 
+            rel="stylesheet"
+            href="menu_styles.css"
+        >
     </head>
 
     <!--- Website Body, all the content on the page -->
-    <body id="body_top">
-
+    <body
+        id="body_top";
+    >
         <!-- Main heading on the page -->
-        <h1>Our Restaurant</h1>    
+        <header>
+            <h1>Food, LLC</h1>    
+        </header>    
 
         <!-- Restaurant Menu -->
         <article>
 
             <!-- Table of Contents -->
-            <h2 id="food_type">Our Menu</h2>
-            <nav>
-                <ul> <!-- specifying links for each item with # followed by id -->
-                    <li><button>Chicken</button></li>
-                    <li><button>Beef</button></li>
-                    <li><button>Sushi</button></li>
-                    <li><button>Vegetarian</button></li>
-                </ul>
-            </nav>   
+            <h2 id="Menu_top">Our Menu</h2>
 
-            <h2 id="food_type">Our Menu</h2>
             <nav>
-                <ul> <!-- specifying links for each item with # followed by id -->
-                    <li><a href="#chicken_menu" >Chicken</a></li>
-                    <li><a href="#beef_menu">Beef</a></li>
-                    <li><a href="#sushi_menu">Sushi</a></li>
-                    <li><a href="#vegetarian_menu">Vegetarian</a></li>
-                </ul>
-            </nav>    
+                <!-- button links -->
+                <a 
+                    href="#Chicken"
+                    >Chicken
+                </a>
+
+                <a 
+                    href="#Beef"
+                    >Beef
+                </a>
+            
+                <a 
+                    href="#Sushi"
+                    >Sushi
+                </a>
+            </nav>                 
 
             <!-- Chicken Menu -->
-            <section id="chicken_menu">
+            <section id="Chicken">
                 <h2
                     class="purple"
                     >Chicken</h2>
@@ -81,28 +68,38 @@
                 </p>
 
                 <p>Varius quam quisque id diam vel quam elementum pulvinar etiam. Et magnis dis parturient montes nascetur. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. 
-                </p>   
+                </p> 
+                
+                <!-- Navigation back to the menu -->
+                <nav>
+                    <a href="#Menu_top">Back to Top</a>
+                </nav>  
+
             </section> 
             
 
             <!-- Beef Menu -->
-            <section id="beef_menu">
+            <section id="Beef">
                 <h2>Beef</h2>
 
-                <p
-                    class="purple" 
-                    >Adipiscing vitae proin sagittis nisl rhoncus. Vulputate dignissim suspendisse in est. Volutpat odio facilisis mauris sit amet massa vitae tortor. A cras semper auctor neque vitae tempus quam pellentesque. Odio eu feugiat pretium nibh ipsum consequat nisl. Sapien pellentesque habitant morbi tristique senectus et netus. Ut sem nulla pharetra diam. 
+                <p>Adipiscing vitae proin sagittis nisl rhoncus. Vulputate dignissim suspendisse in est. Volutpat odio facilisis mauris sit amet massa vitae tortor. A cras semper auctor neque vitae tempus quam pellentesque. Odio eu feugiat pretium nibh ipsum consequat nisl. Sapien pellentesque habitant morbi tristique senectus et netus. Ut sem nulla pharetra diam. 
                 </p>
 
                 <p>Tincidunt eget nullam non nisi est sit amet. Volutpat est velit egestas dui id ornare arcu odio ut. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Nibh ipsum consequat nisl vel pretium lectus. Est ullamcorper eget nulla facilisi. Sagittis vitae et leo duis. Morbi leo urna molestie at elementum.
                 </p>
 
                 <p>Magnis dis parturient montes nascetur ridiculus. Nam libero justo laoreet sit amet cursus sit amet dictum. Turpis egestas maecenas pharetra convallis posuere. Ac turpis egestas sed tempus urna et pharetra. Vulputate mi sit amet mauris commodo quis. Placerat orci nulla pellentesque dignissim enim. Curabitur gravida arcu ac tortor dignissim convallis aenean. Mauris cursus mattis molestie a iaculis. Ut etiam sit amet nisl purus. Habitant morbi tristique senectus et netus et malesuada fames ac. 
-                </p>   
+                </p> 
+                
+                <!-- Navigation back to the menu -->
+                <nav>
+                    <a href="#Menu_top">Back to Top</a>
+                </nav>                  
+
             </section> 
 
             <!-- Sushi Menu -->
-            <section id="sushi_menu">
+            <section id="Sushi">
                 <h2>Sushi</h2>
 
                 <p>Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Ut sem nulla pharetra diam sit. Arcu vitae elementum curabitur vitae nunc sed velit. Et sollicitudin ac orci phasellus egestas tellus rutrum. Volutpat est velit egestas dui id ornare arcu odio ut. Diam maecenas sed enim ut sem. Enim tortor at auctor urna nunc id cursus metus aliquam. Mollis nunc sed id semper risus in.
@@ -112,37 +109,27 @@
                 </p>
 
                 <p>Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Enim diam vulputate ut pharetra sit. Mattis rhoncus urna neque viverra justo nec ultrices. Tincidunt arcu non sodales neque sodales ut etiam. 
-                </p>            
-            </section>   
-            
-            <!-- Vegetarian Menu -->
-            <section id="vegetarian_menu">
-                <h2>Vegetarian</h2>
+                </p>   
+                
+                <!-- Navigation back to the menu -->
+                <nav>
+                    <a href="#Menu_top">Back to Top</a>
+                </nav>  
 
-                <p>Nec tincidunt praesent semper feugiat nibh sed. Egestas pretium aenean pharetra magna ac. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Mauris a diam maecenas sed enim ut. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget lorem dolor sed viverra. Urna porttitor rhoncus dolor purus non. Turpis tincidunt id aliquet risus.
-                </p>
-
-                <p>Nec tincidunt praesent semper feugiat nibh sed. Egestas pretium aenean pharetra magna ac. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Mauris a diam maecenas sed enim ut. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget lorem dolor sed viverra. Urna porttitor rhoncus dolor purus non. Turpis tincidunt id aliquet risus.
-                </p>
-
-                <p>Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Enim diam vulputate ut pharetra sit. Mattis rhoncus urna neque viverra justo nec ultrices. Tincidunt arcu non sodales neque sodales ut etiam. Nec tincidunt praesent semper feugiat nibh sed. Egestas pretium aenean pharetra magna ac. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Mauris a diam maecenas sed enim ut. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Eget lorem dolor sed viverra. Urna porttitor rhoncus dolor purus non. Turpis tincidunt id aliquet risus.
-                </p>            
-            </section>    
-            
-            <!-- Navigation back to the menu -->
-            <nav>
-                <a href="#food_type">Back to Our Menu</a>
-            </nav>     
+            </section>        
 
         </article>
 
     <!-- Visual space break -->
     <br>
 
-    <!-- Navigation back to the top -->
-    <nav>
-        <a href="#body_top">Back to Top</a>
-    </nav>            
+    <!-- Footer -->
+    <footer>
+        <!-- Navigation back to the top -->
+        <nav>
+            <a href="#body_top">Home</a>
+        </nav>       
+    </footer>     
 
     </body> <!--- End of website body -->
 </html> <!--- End of document -->
