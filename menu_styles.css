@@ -7,32 +7,13 @@
 /*                                                          */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-/* all headers will be centered */
-h1, h2{
-    text-align: center;
-}
+/* * * * * * * * * * * Fancy Button Styles * * * * * * * * * * * * */
 
-h1 {
-    display: block;
-    background-color: darkslateblue;
-    padding: 10px;
-    color: white; /* white text */
-    font-size: xx-large;
-    text-shadow: 
-    /*  x   y   color*/ /* blue doesn't work here??*/
-        2px 2px black;       
-}
-
-h2 {
-    color: darkslateblue;
-    font-size: x-large;
-    text-shadow: 
-    /*  x   y   color*/ /* blue doesn't work here??*/
-        .1px .1px black;      
-}
 
 /* all <a> elements children of <nav> will look like buttons*/
+/*
 nav > a {
+    clear: both;
     display: block;
     border-top: 2px solid slategray;
     border-right: 2px solid black;
@@ -40,38 +21,197 @@ nav > a {
     border-left: 2px solid slategray;
     margin: 2px;
     text-align: center;
-    text-decoration: none; /* removes underline on links */ 
-    background-color: darkslateblue; /* dark slate blue */
+    text-decoration: none; 
+    background-color: darkslateblue;
     opacity: 0.85;
-    border-radius: 6px; /* round corners */
-    color: white; /* white text */
+    border-radius: 6px; 
+    color: white;
     font-size: x-large;
-    text-shadow: 
-    /*  x   y   color*/ /* blue doesn't work here??*/
-        2px 2px black;   
-    /*          y     x   */
+    text-shadow: 2px 2px black;   
     padding:    10px  10px;
-    width: 200px;
+    width: 230px;
     cursor: alias;
-}            
+}         
+*/
+
+/* slightly smaller button link for inside sections*/
+/*
+section > nav > a {
+    font-size: medium;
+    width: 130px;
+    clear: both;
+}
+*/
 
 /* <a> elements button links when mouse is hovering */
+/*
     nav > a:hover {
     opacity: 1;
     transition: 0.67s;
-}     
+} 
+*/    
 
 /* show right-pointing double arrow when hovering over a button */
+/*
 nav > a:hover::after {
     content: '\00bb'; 
-    transition: 0.67s; /* is this doing anything? */
+    transition: 0.67s; 
     opacity: 1;
     border-color: black;
 }   
+*/
 
+
+
+/* * * * * * * * * * * Basic Styles * * * * * * * * * * * * */
+
+/* Star selector to reset the box-sizing and reset margins  */
+* {
+    box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;             
+}
+
+/* Text alignment and font specified for site */
+body {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+/* h1 coloring for main heading on page */
+h1 {
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 12px;    
+}
+
+/* h2 coloring for secondary heading on page */
+h2 {
+    /* border: 1px dotted red; /* just a visual for editing */
+    text-align: center;
+    margin: 15px 0px;
+    padding: 12px;      
+}
+
+/* Each section includes an <h2> some <p> and an <a> */
 section {
-    border: 2px solid darkslateblue;
-    border-radius: 8px;
-    margin: 5px;
-    padding: 20px 20px;
+    border: 2.5px solid black;
+    padding: 0px 20px 0px 20px;
+    margin: 15px 15px 0px 15px;
+    background-color: aliceblue;
+}
+
+/* targetting <h2>s that are inside of sections only gets the food categories */
+section h2 {
+    border-bottom: 2.5px solid black;
+    border-left: 2.5px solid black;
+    margin: 0px -20px 15px 0px;
+    width: 250px;
+    float: right;
+}
+
+#Chicken h2 {
+    background-color: blueviolet;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#Beef h2 {
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#Sushi h2 {
+    background-color: blue;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+section p {
+    clear: right;
+}
+
+/* targetting divs that are inside of sections only gets the links */
+section div {
+    padding: 12px;
+    text-align: right;
+}
+
+footer {
+    margin: 15px;
+    padding: 12px;
+    text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+/*                                                          */
+/*  Media Queries Responsive Design                         */
+/*  Desktop: 992px and above                                */
+/*  Tablet: 768px to 991px                                  */
+/*  Mobile: 767px and below                                 */
+/*                                                          */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+/* * * * * * * * * * * Mobile * * * * * * * * * * * * * * * */
+/* 1 column */
+@media (max-width: 767px) {
+    #Sushi {
+        /*background-image: URL("blue monochromatic drawing of sushi rolls3.png");
+        background-position: inherit;
+        opacity: 0.4;*/
+        background-color: powderblue;
+    }   
+
+    section {
+        width: 100%;
+        float: left;
+    }
+
+    div {
+        clear: left;
+    }
+
+
+}
+
+/* * * * * * * * * * * Tablet * * * * * * * * * * * * * * * */
+/* 2 columns followed by 1 column */
+@media (min-width: 768px) and (max-width: 991px) {
+    #Beef {
+        background-color: springgreen;
+    }
+}
+
+    section {
+        width: 50%;
+        float: left;
+    }
+
+    div {
+        clear: left;
+    }
+
+/* * * * * * * * * * * Desktop * * * * * * * * * * * * * * **/
+/* 3 columns */
+@media (min-width: 992px) {
+    
+    section {
+        width: 33.33%;
+        float: left;
+    }
+
+    div {
+        clear: left;
+    }
+    
+    /*
+    br {
+        clear: left;
+    }
+    */
+
+    #Chicken {
+        background-color: sandybrown;
+    }
 }
