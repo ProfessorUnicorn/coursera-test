@@ -99,7 +99,7 @@ h2 {
 section {
     border: 2.5px solid black;
     padding: 0px 20px 0px 20px;
-    margin: 15px 15px 0px 15px;
+    margin: 15px 0px 0px 0px;
     background-color: aliceblue;
 }
 
@@ -108,7 +108,7 @@ section h2 {
     border-bottom: 2.5px solid black;
     border-left: 2.5px solid black;
     margin: 0px -20px 15px 0px;
-    width: 250px;
+    width: 220px;
     float: right;
 }
 
@@ -144,6 +144,11 @@ footer {
     text-align: center;
 }
 
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 /*                                                          */
 /*  Media Queries Responsive Design                         */
@@ -161,17 +166,7 @@ footer {
         background-position: inherit;
         opacity: 0.4;*/
         background-color: powderblue;
-    }   
-
-    section {
-        width: 100%;
-        float: left;
-    }
-
-    div {
-        clear: left;
-    }
-
+    } 
 
 }
 
@@ -181,37 +176,28 @@ footer {
     #Beef {
         background-color: springgreen;
     }
-}
-
-    section {
-        width: 50%;
-        float: left;
+    .col-md-6, .col-md-12 {
+      float: left;
     }
-
-    div {
-        clear: left;
+    .col-md-6 {
+      width: 50%;
     }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
 
 /* * * * * * * * * * * Desktop * * * * * * * * * * * * * * **/
 /* 3 columns */
 @media (min-width: 992px) {
-    
-    section {
-        width: 33.33%;
-        float: left;
-    }
-
-    div {
-        clear: left;
-    }
-    
-    /*
-    br {
-        clear: left;
-    }
-    */
 
     #Chicken {
         background-color: sandybrown;
+    }
+    .col-lg-4 {
+        float: left;
+    }
+    .col-lg-4 {
+        width: 33.33%;
     }
 }
